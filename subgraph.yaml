@@ -1,6 +1,6 @@
 specVersion: 0.0.2
-description: Tartz is a decentralized protocol for automated token exchange on fantom.
-repository: https://github.com/Uniswap/uniswap-v3-subgraph
+description: Tartz is a decentralized protocol for automated token exchange on avalanche.
+repository: https://github.com/tartz-one/v3-subgraph
 schema:
   file: ./schema.graphql
 features:
@@ -8,11 +8,11 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: fantom
+    network: avalanche
     source:
-      address: '0xeC1c57873388069F55A0FC17fF4eD7C3C05E88F0'
+      address: '0x467C6f21E272584eDBc856a3DB3B7F9a1678f068'
       abi: Factory
-      startBlock: 61116673
+      startBlock: 30247684
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -37,11 +37,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: fantom
+    network: avalanche
     source:
-      address: '0xEcb90c912Af96Fd132b55Ba1066607C66FC81449'
+      address: '0x3713974fd2fa958e0C97328591d38f5Db7B9ab2F'
       abi: NonfungiblePositionManager
-      startBlock: 61216999
+      startBlock: 30247727
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: fantom
+    network: avalanche
     source:
       abi: Pool
     mapping:

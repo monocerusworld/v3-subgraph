@@ -25,45 +25,45 @@ import { exponentToBigDecimal, safeDiv } from '../utils/index'
 //   '0xeFAeeE334F0Fd1712f9a8cc375f427D9Cdd40d73', // USDT
 // ]
 
-//GNOSIS
-// const WETH_ADDRESS = '0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1'
-// const USDC_WETH_03_POOL = '0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8' //tbd
-
-// // token where amounts should contribute to tracked volume and liquidity
-// // usually tokens that many tokens are paired with s
-// export let WHITELIST_TOKENS: string[] = [
-//   WETH_ADDRESS, // WETH
-//   '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d', // DAI
-//   '0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83', // USDC
-//   '0x4ECaBa5870353805a9F068101A40E0f32ed605C6', // USDT
-//   '0x8e5bBbb09Ed1ebdE8674Cda39A0c169401db4252', // WBTC
-// ]
-
-// let STABLE_COINS: string[] = [
-//   '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d', // DAI
-//   '0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83', // USDC
-//   '0x4ECaBa5870353805a9F068101A40E0f32ed605C6', // USDT
-// ]
-
-//FANTOM
-const WETH_ADDRESS = '0xab3f0245B83feB11d15AAffeFD7AD465a59817eD'
+//AVALANCHE
+const WETH_ADDRESS = '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7'
 const USDC_WETH_03_POOL = '0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8' //tbd
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
 export let WHITELIST_TOKENS: string[] = [
   WETH_ADDRESS, // WETH
-  '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E', // DAI
-  '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', // USDC
-  '0x049d68029688eAbF473097a2fC38ef61633A3C7A', // USDT
-  '0x321162Cd933E2Be498Cd2267a90534A804051b11', // WBTC
+  '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70', // DAI
+  '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E', // USDC
+  '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7', // USDT
+  '0x50b7545627a5162F82A992c33b87aDc75187B218', // WBTC
 ]
 
 let STABLE_COINS: string[] = [
-  '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E', // DAI
-  '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', // USDC
-  '0x049d68029688eAbF473097a2fC38ef61633A3C7A', // USDT
+  '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70', // DAI
+  '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E', // USDC
+  '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7', // USDT
 ]
+
+//fantom
+// const WETH_ADDRESS = '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83'
+// const USDC_WETH_03_POOL = '0xef077a828d8345444ba43a9150ca230bda1fd22d' //tbd
+
+// token where amounts should contribute to tracked volume and liquidity
+// usually tokens that many tokens are paired with s
+// export let WHITELIST_TOKENS: string[] = [
+//   WETH_ADDRESS, // WETH
+//   '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E', // DAI
+//   '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', // USDC
+//   '0x049d68029688eAbF473097a2fC38ef61633A3C7A', // USDT
+//   '0x321162Cd933E2Be498Cd2267a90534A804051b11', // WBTC
+// ]
+
+// let STABLE_COINS: string[] = [
+//   '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E', // DAI
+//   '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', // USDC
+//   '0x049d68029688eAbF473097a2fC38ef61633A3C7A', // USDT
+// ]
 
 let MINIMUM_ETH_LOCKED = BigDecimal.fromString('60')
 
