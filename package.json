@@ -6,6 +6,8 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
+    "deploy:manta-testnet": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ monocerusworld/v3-manta-testnet",
+
     "create-local": "graph create ianlapham/uniswap-v3 --node http://127.0.0.1:8020",
     "auth": "graph auth --product hosted-service 9623cc66488a512b71d04873ea66a58e",
     "deploy": "graph deploy --product hosted-service monocerusworld/v3-avax",
