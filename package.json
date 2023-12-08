@@ -1,15 +1,14 @@
 {
-  "name": "uniswap-v3-subgraph",
-  "version": "1.0.0",
+  "name": "monocerus-subgraph",
+  "version": "1.1.0",
   "repository": "https://github.com/graphprotocol/uniswap-v3-subgraph",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "deploy:manta-testnet": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ monocerusworld/v3-manta-testnet",
-
+    "deploy": "goldsky subgraph deploy monocerus/1.1.0 --path .",
     "create-local": "graph create ianlapham/uniswap-v3 --node http://127.0.0.1:8020",
-    "auth": "graph auth --product hosted-service 9623cc66488a512b71d04873ea66a58e",
+    "auth": "goldsky login clpw4ilidk7sv01tn5x2g17r9",
     "deploy": "graph deploy --product hosted-service monocerusworld/v3-avax",
     "deploy-local": "graph deploy ianlapham/uniswap-v3 --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
     "deploy-dev": "graph deploy sommelier/uniswap-v3 --ipfs http://35.197.14.14:5000/ --node http://35.197.14.14:8020/ --debug",

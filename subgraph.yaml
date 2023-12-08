@@ -1,5 +1,5 @@
 specVersion: 0.0.4
-description: MonocerusSwap is a decentralized protocol for automated token exchange on manta-pacific-testnet.
+description: MonocerusSwap is a decentralized protocol for automated token exchange on manta-pacific-mainnet.
 repository: https://github.com/monocerus/v3-subgraph
 schema:
   file: ./schema.graphql
@@ -8,11 +8,11 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: manta-pacific-testnet
+    network: manta-pacific-mainnet
     source:
-      address: '0x3B7E491E73eDF4c330b35D0706352B6bb92232E0'
+      address: '0x481F4b658d1447A9559B220640Fb79C2B993032A'
       abi: Factory
-      startBlock: 1281526
+      startBlock: 743017
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -37,11 +37,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: manta-pacific-testnet
+    network: manta-pacific-mainnet
     source:
-      address: '0xB6a264a95993Cd4FfF22B9B2d98605964E0f4D86'
+      address: '0xE0836a2DFd8Ba6C63786803EA75DF801383af68C'
       abi: NonfungiblePositionManager
-      startBlock: 1281546
+      startBlock: 777587
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: manta-pacific-testnet
+    network: manta-pacific-mainnet
     source:
       abi: Pool
     mapping:
