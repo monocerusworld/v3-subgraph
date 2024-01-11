@@ -5,8 +5,8 @@ import { BigDecimal, BigInt } from '@graphprotocol/graph-ts'
 import { exponentToBigDecimal, safeDiv } from '../utils/index'
 
 //MANTA
-const WETH_ADDRESS = '0x0Dc808adcE2099A9F62AA87D9670745AbA741746'
-const USDC_WETH_03_POOL = '0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8' //tbd
+const WETH_ADDRESS = '0x0dc808adce2099a9f62aa87d9670745aba741746'
+const USDC_WETH_03_POOL = '0x1233544bd61ef55fd16252479b8b188413d4cf89'
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
